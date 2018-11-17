@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ride-share</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/style.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <!-- NAV BAR-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="http://placehold.it/150x50?text=Logo" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbar10">
+                <ul class="navbar-nav nav-fill w-100">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-drivers-list" data-toggle="list"
+                        href="#list-drivers" role="tab" aria-controls="Profile">Drivers</a>
+                    <a class="list-group-item list-group-item-action" id="list-customers-list" data-toggle="list" href="#list-customers"
+                        role="tab" aria-controls="request">Customers</a>
+                    <a class="list-group-item list-group-item-action" id="list-rides-list" data-toggle="list" href="#list-rides"
+                        role="tab" aria-controls="settings">Rides</a>
+                    <a class="list-group-item list-group-item-action" id="list-logout-list" data-toggle="list" role="tab"
+                        aria-controls="settings">Logout</a>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-drivers" role="tabpanel" aria-labelledby="list-home-list">
+                        <!-- Drivers nav-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                    <ul class="nav nav-pills nav-fill mb-3" id="pills-tab" role="tablist">
+                                            <li class="nav-item">
+                                              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-view-drivers" role="tab" aria-controls="pills-home" aria-selected="true">View all drivers</a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-add" role="tab" aria-controls="pills-profile" aria-selected="false">Add new driver</a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-edit" role="tab" aria-controls="pills-contact" aria-selected="false">Edit driver details</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-remove" role="tab" aria-controls="pills-contact" aria-selected="false">Remove driver</a>
+                                                  </li>
+                                          </ul>
+                                          <div class="tab-content" id="pills-tabContent">
+                                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">table of drivers</div>
+                                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">add new driver form</div>
+                                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">edit driver</div>
+                                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">edit driver</div>
+                                          </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-customers" role="tabpanel" aria-labelledby="list-request-list">
+                        <!-- customers nav-->
+                        
+                        
+                        request
+                        form</div>
+                    <div class="tab-pane fade" id="list-rides" role="tabpanel" aria-labelledby="list-scheduled-rides-list">
+                        <!-- rides nav-->
+                        
+                        schdeuled
+                        ride list, cancel ride button</div>
+                </div>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous">
+                </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous">
+                </script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous">
+                </script>
+</body>
+
+</html>
